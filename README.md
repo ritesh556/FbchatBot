@@ -1,6 +1,6 @@
 # FbchatBot
 
-This is the FB messenger...
+##This is the FB messenger which uses GUI
 
 ## How to install
 
