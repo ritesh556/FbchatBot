@@ -1,14 +1,13 @@
 # FbchatBot
 
-### This is the FB messanger......
+This is the FB messenger...
 
+## How to install
 
+To install the necessary packages, follow these steps:
 
-#### How to install
+1. Install `fbchat` by running `pip install fbchat`
+2. Install `tkinter` by running `pip install tkinter`
+3. Write the names of the persons you want to send messages to in the `names.txt` file
 
-1.pip install fbchat
-2.pip install tkinter
-3.write names of the persons who you want to send message in names.txt file
-
-##### his can be used for sending chat only
-
+**Note:** This program can only be used for sending chat messages.
