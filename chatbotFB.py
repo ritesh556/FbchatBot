@@ -45,7 +45,7 @@ class FacebookMessengerApp:
         # Note::::1)The same should be same as fb user name 
         # 2) If there is two or more same names then also only one random will be selected
         #3) Uid can be used to remove this.......
-        with open("G:/fb chat bot/names.txt") as f:
+        with open("names.txt") as f:
             names = [line.strip() for line in f]
         for i, name in enumerate(names):
             check_var = tk.IntVar()
@@ -133,8 +133,8 @@ class FacebookMessengerApp:
         self.success_label.pack()
 root = tk.Tk()
 root.geometry("300x200")
-icon = tk.PhotoImage(file="g:fb chat bot\iconmonstr-facebook-messenger-1 (Custom).png")
-iconsmall =  tk.PhotoImage(file="g:fb chat bot\iconmonstr-facebook-messenger-1 (Custom) (1).png")
+icon = tk.PhotoImage(file="iconmonstr-facebook-messenger-1 (Custom).png")
+iconsmall =  tk.PhotoImage(file="facebook-messenger-1 (Custom) (1).png")
 
 root.iconphoto(False, icon, iconsmall)
 
