@@ -45,8 +45,13 @@ class FacebookMessengerApp:
         # Note::::1)The same should be same as fb user name 
         # 2) If there is two or more same names then also only one random will be selected
         #3) Uid can be used to remove this.......
-        with open("names.txt") as f:
-            names = [line.strip() for line in f]
+        try:
+            with open("names.txt") as f:
+                names = [line.strip() for line in f]
+        except FileNotFoundError:
+            open("names.txt", "w").close()
+            names = []
+
         for i, name in enumerate(names):
             check_var = tk.IntVar()
             check_button = tk.Checkbutton(master, text=name, variable=check_var)
